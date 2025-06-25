@@ -1,0 +1,1923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMMPanel - Best SMM Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Modern Header Styles */
+        .header-actions {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .btn {
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .btn-login {
+            background: transparent;
+            color: #3b82f6;
+            border: 1px solid #e5e7eb;
+        }
+
+        .btn-login:hover {
+            background: #f8fafc;
+            border-color: #d1d5db;
+        }
+
+        .btn-primary {
+            background: #3b82f6;
+            color: white;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background: #2563eb;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: #1a1a1a;
+            cursor: pointer;
+        }
+
+        @media (max-width: 1024px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .header-actions {
+                display: none;
+            }
+            
+            .menu-toggle {
+                display: block;
+            }
+            
+            .header {
+                padding: 0 20px;
+            }
+        }
+    </style>
+  <style>
+    /* Minimal Header with Logo and Login */
+    .site-header {
+      padding: 20px 5%;
+      width: 100%;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      width: auto;
+      display: block;
+    }
+
+    .login-btn {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background: #1d4ed8;
+    }
+    
+    /* Why Choose Us Section Styles */
+    .section {
+      padding: 80px 0;
+    }
+    
+    .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    
+    .section-header h2 {
+      font-size: 2.5rem;
+      color: #1e40af;
+      margin-bottom: 15px;
+    }
+    
+    .section-header p {
+      color: #6b7280;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    .why-us-content {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      margin-top: 40px;
+    }
+    
+    .why-us-image {
+      flex: 1;
+      padding: 20px;
+    }
+    
+    .features-grid {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+    
+    .feature-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      background: #e0e7ff;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      color: #3b82f6;
+      font-size: 24px;
+    }
+    
+    .feature-card h3 {
+      font-size: 1.25rem;
+      color: #1f2937;
+      margin-bottom: 12px;
+    }
+    
+    .feature-card p {
+      color: #6b7280;
+      line-height: 1.6;
+    }
+    
+    @media (max-width: 992px) {
+      .why-us-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .why-us-image {
+        margin-bottom: 40px;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .features-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      
+      .feature-card {
+        text-align: center;
+      }
+      
+      .feature-icon {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="/" class="logo">
+        <img src="images/logo.png" alt="SMMPanel Logo">
+      </a>
+      <a href="#login" class="login-btn">Login</a>
+    </div>
+  </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="shape-left"></div>
+        <div class="shape-right"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Power Your <span class="highlight">Social Media Growth</span><br />
+                        with the Best SMM Panel
+                    </h1>
+                    <p class="hero-subtitle" style="color: white;">
+                        Get instant, reliable, and affordable social media services<br />
+                        tailored to boost your online presence.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#services" class="hero-button">Explore Services</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/social-media-growth.svg" alt="Social Media Growth Illustration" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Our SMM Panel?</h2>
+                <p>We provide the best social media marketing services with instant delivery and 24/7 support.</p>
+            </div>
+            
+            <div class="why-us-content">
+                <div class="why-us-image">
+                    <img src="images/why-choose-us.svg" alt="Why Choose Us" style="max-width: 100%; height: auto;">
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Instant Delivery</h3>
+                        <p>Get your orders delivered instantly to your account after payment confirmation.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>Our support team is available round the clock to assist you with any queries.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Secure Payments</h3>
+                        <p>All payments are processed through secure and trusted payment gateways.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Real Analytics</h3>
+                        <p>Track your orders and analyze your social media growth with our dashboard.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Support Section -->
+    <section id="platforms" class="section bg-light">
+        <div class="container">
+            <h2>Supported Social Media Platforms</h2>
+            <p class="text-center" style="max-width: 800px; margin: 0 auto 50px;">
+                We provide comprehensive SMM services across all major social media platforms to help you grow your online presence.
+            </p>
+            <div class="platforms-grid">
+                <div class="platform">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                </div>
+                <div class="platform">
+                    <i class="fab fa-youtube"></i>
+                    <h3>YouTube</h3>
+                </div>
+                <div class="platform">
+                    <i class="fab fa-facebook"></i>
+                    <h3>Facebook</h3>
+                </div>
+                <div class="platform">
+                    <i class="fab fa-tiktok"></i>
+                    <h3>TikTok</h3>
+                </div>
+                <div class="platform">
+                    <i class="fab fa-twitter"></i>
+                    <h3>X (Twitter)</h3>
+                </div>
+                <div class="platform">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                </div>
+                <div class="platform">
+                    <i class="fab fa-pinterest"></i>
+                    <h3>Pinterest</h3>
+                </div>
+                <div class="platform">
+                    <i class="fab fa-reddit"></i>
+                    <h3>Reddit</h3>
+                </div>
+                <div class="platform">
+                    <i class="fab fa-snapchat"></i>
+                    <h3>Snapchat</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Detail Section -->
+    <section id="services-detail" class="section">
+        <div class="container">
+            <h2>Our Comprehensive SMM Services</h2>
+            <p class="text-center" style="max-width: 800px; margin: 0 auto 50px;">
+                We offer a wide range of social media marketing services to help you grow your online presence across all major platforms.
+            </p>
+            
+            <!-- Instagram Services -->
+            <div class="service-category">
+                <div class="service-category-header">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram SMM Panel</h3>
+                </div>
+                <p>Instagram is a powerhouse in the social media world, with over a billion active users. Our Instagram SMM Panel is designed to give you the edge you need to stand out in this crowded space.</p>
+                
+                <div class="service-item">
+                    <h4>Instagram Followers</h4>
+                    <p>Building a strong follower base is crucial for success on Instagram. With our Instagram Followers SMM Panel, you can quickly increase your followers with real accounts. These are high-quality followers, ensuring that your follower count doesn't just look good but actually contributes to your overall engagement.</p>
+                </div>
+                
+                <div class="service-item">
+                    <h4>Instagram Likes</h4>
+                    <p>Likes are the currency of Instagram. The more likes your posts have, the more likely they are to reach a wider audience. Our Instagram Likes ogogo provides instant likes from real users, giving your posts the boost they need.</p>
+                </div>
+                
+                <div class="service-item">
+                    <h4>Instagram Views</h4>
+                    <p>Videos are an essential part of Instagram, and getting views is key to boosting their visibility. Our Instagram Views SMM Panel offers real-time delivery of views to ensure your videos get the attention they deserve.</p>
+                </div>
+                
+                <div class="service-item">
+                    <h4>Instagram Comments</h4>
+                    <p>Comments add depth to your posts and encourage more interaction. Our Instagram Comments SMM Panel provides real, customizable comments that can be tailored to fit your content perfectly.</p>
+                </div>
+            </div>
+            
+            <!-- YouTube Services -->
+            <div class="service-category">
+                <div class="service-category-header">
+                    <i class="fab fa-youtube"></i>
+                    <h3>YouTube SMM Panel</h3>
+                </div>
+                <p>YouTube is the second-largest search engine in the world, making it a critical platform for content creators and marketers alike. Our YouTube SMM Panel offers a range of services to help you grow your channel, increase your visibility, and engage with your audience.</p>
+                
+                <div class="service-item">
+                    <h4>YouTube Subscribers</h4>
+                    <p>Growing your subscriber base is essential for long-term success on YouTube. Our YouTube Subscribers SMM Panel delivers real subscribers quickly, helping you build a loyal audience.</p>
+                </div>
+                
+                <div class="service-item">
+                    <h4>YouTube Views</h4>
+                    <p>Views are vital for getting your videos noticed on YouTube. Our YouTube Views SMM Panel offers organic growth with high retention rates, ensuring that your videos don't just get clicked on but are actually watched.</p>
+                </div>
+                
+                <div class="service-item">
+                    <h4>YouTube Likes</h4>
+                    <p>Likes on YouTube serve as a signal to both viewers and the platform's algorithm that your content is worth watching. Our YouTube Likes SMM Panel provides instant likes from authentic accounts.</p>
+                </div>
+                
+                <div class="service-item">
+                    <h4>YouTube Comments</h4>
+                    <p>Comments are a great way to build community and engagement on your channel. Our YouTube Comments SMM Panel offers real, customizable comments that enhance your videos and encourage more interaction.</p>
+                </div>
+            </div>
+            
+            <!-- TikTok Services -->
+            <div class="service-category">
+                <div class="service-category-header">
+                    <i class="fab fa-tiktok"></i>
+                    <h3>TikTok SMM Panel</h3>
+                </div>
+                <p>TikTok has taken the world by storm, and it's the perfect platform for going viral. Whether you're a creator, brand, or just someone who loves making videos, our TikTok SMM Panel offers everything you need to grow your audience and make a splash.</p>
+                
+                <div class="service-item">
+                    <h4>TikTok Followers</h4>
+                    <p>Building a following on TikTok can be challenging, but our TikTok Followers SMM Panel makes it easy. We deliver real followers quickly, helping you grow your account organically with fast and secure delivery.</p>
+                </div>
+                
+                <div class="service-item">
+                    <h4>TikTok Likes</h4>
+                    <p>Likes are crucial for getting your TikTok videos noticed. Our TikTok Likes SMM Panel provides real engagement from authentic users, boosting your videos' visibility and increasing your chances of going viral.</p>
+                </div>
+                
+                <div class="service-item">
+                    <h4>TikTok Views</h4>
+                    <p>Views are everything on TikTok, and our TikTok Views SMM Panel ensures your videos get seen by as many people as possible. With organic reach and high retention, your content will attract more views and keep viewers engaged.</p>
+                </div>
+                
+                <div class="service-item">
+                    <h4>TikTok Comments</h4>
+                    <p>Comments on TikTok can spark discussions and encourage more engagement. Our TikTok Comments SMM Panel offers real, customizable comments that can be tailored to fit your videos perfectly.</p>
+                </div>
+            </div>
+            
+            <!-- Facebook Services -->
+            <div class="service-category">
+                <div class="service-category-header">
+                    <i class="fab fa-facebook"></i>
+                    <h3>Facebook SMM Panel</h3>
+                </div>
+                <p>Facebook remains one of the most powerful social media platforms, and our Facebook SMM Panel offers a range of services to help you maximize your presence and engagement.</p>
+                
+                <div class="service-item">
+                    <h4>Facebook Likes</h4>
+                    <p>Getting likes on Facebook is crucial for increasing your post's reach. Our Facebook Likes SMM Panel offers instant likes from real profiles, ensuring your content gets the attention it deserves.</p>
+                </div>
+                
+                <div class="service-item">
+                    <h4>Facebook Followers</h4>
+                    <p>Building a strong follower base on Facebook can take time, but our Facebook Followers SMM Panel makes it easy with real followers and safe delivery.</p>
+                </div>
+                
+                <div class="service-item">
+                    <h4>Facebook Shares</h4>
+                    <p>Shares on Facebook are a powerful way to increase your content's visibility. Our Facebook Shares SMM Panel boosts your posts with real accounts, helping you reach a broader audience.</p>
+                </div>
+                
+                <div class="service-item">
+                    <h4>Facebook Comments</h4>
+                    <p>Comments on Facebook can drive engagement and foster community. Our Facebook Comments SMM Panel offers real, customizable comments that add value to your posts.</p>
+                </div>
+            </div>
+            
+            <!-- Twitter (X) Services -->
+            <div class="service-category">
+                <div class="service-category-header">
+                    <i class="fab fa-twitter"></i>
+                    <h3>Twitter (X) SMM Panel</h3>
+                </div>
+                <p>Twitter is all about real-time engagement, and our Twitter SMM Panel provides the tools you need to stay ahead of the curve and grow your presence.</p>
+                
+                <div class="service-item">
+                    <h4>Twitter Followers</h4>
+                    <p>Growing your follower count on Twitter is key to building influence. Our Twitter Followers SMM Panel delivers real followers quickly, helping you increase your reach and credibility.</p>
+                </div>
+                
+                <div class="service-item">
+                    <h4>Twitter Likes</h4>
+                    <p>Likes on Twitter help signal the popularity of your tweets. Our Twitter Likes SMM Panel offers instant likes from real users, boosting your tweets' engagement and visibility.</p>
+                </div>
+                
+                <div class="service-item">
+                    <h4>Twitter Retweets</h4>
+                    <p>Retweets are essential for spreading your message on Twitter. Our Twitter Retweets SMM Panel provides real retweets from authentic profiles, increasing your tweets' reach and impact.</p>
+                </div>
+            </div>
+            
+            <!-- LinkedIn Services -->
+            <div class="service-category">
+                <div class="service-category-header">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn SMM Panel</h3>
+                </div>
+                <p>LinkedIn is the go-to platform for professionals, and our LinkedIn SMM Panel is designed to help you grow your network and enhance your professional presence.</p>
+                
+                <div class="service-item">
+                    <h4>LinkedIn Connections</h4>
+                    <p>Building a strong network on LinkedIn is essential for professional growth. Our LinkedIn Connections SMM Panel delivers real connections quickly, helping you expand your network.</p>
+                </div>
+                
+                <div class="service-item">
+                    <h4>LinkedIn Endorsements</h4>
+                    <p>Endorsements on LinkedIn are a great way to showcase your skills. Our LinkedIn Endorsements SMM Panel offers real endorsements from authentic profiles.</p>
+                </div>
+            </div>
+            
+            <!-- Snapchat Services -->
+            <div class="service-category">
+                <div class="service-category-header">
+                    <i class="fab fa-snapchat"></i>
+                    <h3>Snapchat SMM Panel</h3>
+                </div>
+                <p>Snapchat is all about visual storytelling, and our Snapchat SMM Panel provides the tools you need to grow your audience and increase engagement.</p>
+                
+                <div class="service-item">
+                    <h4>Snapchat Followers</h4>
+                    <p>Growing your follower count on Snapchat can be challenging, but our Snapchat Followers SMM Panel makes it easy with real followers delivered instantly.</p>
+                </div>
+                
+                <div class="service-item">
+                    <h4>Snapchat Views</h4>
+                    <p>Views are essential for getting your Snapchat content noticed. Our Snapchat Views SMM Panel offers real engagement from authentic users.</p>
+                </div>
+            </div>
+            
+            <!-- Pinterest Services -->
+            <div class="service-category">
+                <div class="service-category-header">
+                    <i class="fab fa-pinterest"></i>
+                    <h3>Pinterest SMM Panel</h3>
+                </div>
+                <p>Pinterest is a visual discovery platform that's perfect for driving traffic and engagement to your content and websites.</p>
+                
+                <div class="service-item">
+                    <h4>Pinterest Followers</h4>
+                    <p>Building a strong follower base on Pinterest is crucial for success. Our Pinterest Followers SMM Panel delivers real followers quickly.</p>
+                </div>
+                
+                <div class="service-item">
+                    <h4>Pinterest Repins</h4>
+                    <p>Repins on Pinterest are a powerful way to increase your content's visibility. Our Pinterest Repins SMM Panel offers real engagement from authentic users.</p>
+                </div>
+            </div>
+            
+            <!-- Reddit Services -->
+            <div class="service-category">
+                <div class="service-category-header">
+                    <i class="fab fa-reddit"></i>
+                    <h3>Reddit SMM Panel</h3>
+                </div>
+                <p>Reddit is all about community and engagement, and our Reddit SMM Panel provides the tools you need to increase your visibility and boost interaction.</p>
+                
+                <div class="service-item">
+                    <h4>Reddit Upvotes</h4>
+                    <p>Upvotes on Reddit help signal the popularity of your posts. Our Reddit Upvotes SMM Panel offers real upvotes from authentic users.</p>
+                </div>
+                
+                <div class="service-item">
+                    <h4>Reddit Comments</h4>
+                    <p>Comments on Reddit can drive discussions and encourage more engagement. Our Reddit Comments SMM Panel offers real, customizable comments.</p>
+                </div>
+            </div>
+            
+            <!-- Why Choose Our SMM Panel -->
+            <div class="why-choose-us section">
+                <div class="container">
+                    <h2>Why Choose Our SMM Panel?</h2>
+                    <p class="lead-text">Our SMM Panel is designed to offer the best services across all major social media platforms. With a focus on quality, speed, and reliability, we're here to help you achieve your social media goals.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-check-circle"></i>
+                            <h4>Quality Services</h4>
+                            <p>We provide real engagement from authentic users on all major platforms.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-bolt"></i>
+                            <h4>Fast Delivery</h4>
+                            <p>Get your orders started quickly with our instant processing system.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Safe & Secure</h4>
+                            <p>Your account safety is our top priority with all our services.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-headset"></i>
+                            <h4>24/7 Support</h4>
+                            <p>Our dedicated support team is always ready to assist you.</p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+            
+            <!-- Reseller Program -->
+            <div class="reseller-program section bg-light">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Become a Reseller & Grow Your Business</h2>
+                        <p>Turn your entrepreneurial dreams into reality with our comprehensive reseller program</p>
+                    </div>
+                    
+                    <div class="reseller-benefits">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-percentage"></i>
+                            </div>
+                            <h4>Bulk Discounts</h4>
+                            <p>Special discounted rates for resellers on bulk orders. The more you buy, the more you save!</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-tag"></i>
+                            </div>
+                            <h4>White-Label Solution</h4>
+                            <p>Brand our services as your own and build your business under your own name.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>API Integration</h4>
+                            <p>Seamlessly integrate our services into your own website or platform.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h4>Dedicated Manager</h4>
+                            <p>Get personalized support from your own account manager.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="how-it-works">
+                        <h3>How to Get Started as a Reseller</h3>
+                        <div class="steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Sign Up for an Account</h4>
+                                    <p>Create your reseller account in just a few simple steps.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Explore Services & Pricing</h4>
+                                    <p>Browse our wide range of services and bulk pricing options.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Set Up Your Platform</h4>
+                                    <p>Integrate our API or use our white-label solution to get started.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Start Selling & Growing</h4>
+                                    <p>Begin reselling services and watch your business grow!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Reseller Program Section -->
+    <section id="reseller" class="section" style="padding: 0; background-color: #f8f9fa;">
+        <div class="container" style="padding-top: 10px;">
+            <h2 style="margin: 0 0 10px 0;">Become a Reseller</h2>
+            <p class="text-center" style="max-width: 800px; margin: 0 auto 50px;">
+                Join our reseller program and start your own SMM business with our white-label solutions and comprehensive support.
+            </p>
+            <div class="reseller-benefits">
+                <div class="benefit">
+                    <i class="fas fa-percentage"></i>
+                    <h4>Bulk Discounts</h4>
+                    <p>Special discounted rates for resellers on bulk orders</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-tag"></i>
+                    <h4>White-label</h4>
+                    <p>Brand the services as your own with our white-label solution</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-code"></i>
+                    <h4>API Access</h4>
+                    <p>Seamless integration with our powerful API</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-headset"></i>
+                    <h4>Dedicated Support</h4>
+                    <p>Personalized support for all your reselling needs</p>
+                </div>
+            </div>
+            <div class="reseller-cta-container">
+                <a href="#contact" class="btn btn-primary btn-lg">Become a Reseller Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Single Maximizing Profit Section -->
+    <section id="maximizing-profit" class="section" style="padding-top: 20px;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tips for Maximizing Profit as an SMM Panel Reseller</h2>
+                <p>Learn how to get the most out of your reselling business with these proven strategies</p>
+            </div>
+            
+            <div class="profit-tips">
+                <div class="profit-tip">
+                    <div class="tip-number">1</div>
+                    <div class="tip-content">
+                        <h3>Take Advantage of Bulk Discounts</h3>
+                        <p>Maximize your profit margins by placing larger orders. Our bulk pricing means the more you buy, the more you save per unit, allowing you to increase your earnings while staying competitive.</p>
+                    </div>
+                </div>
+                
+                <div class="profit-tip">
+                    <div class="tip-number">2</div>
+                    <div class="tip-content">
+                        <h3>Offer Package Deals</h3>
+                        <p>Create attractive bundles that combine multiple services at a discounted rate. Package deals encourage customers to spend more while perceiving greater value in your offerings.</p>
+                    </div>
+                </div>
+                
+                <div class="profit-tip">
+                    <div class="tip-number">3</div>
+                    <div class="tip-content">
+                        <h3>Focus on High-Demand Services</h3>
+                        <p>Concentrate your efforts on services with the highest demand, such as Instagram followers, YouTube views, and TikTok engagement, to maximize your sales potential.</p>
+                    </div>
+                </div>
+                
+                <div class="profit-tip">
+                    <div class="tip-number">4</div>
+                    <div class="tip-content">
+                        <h3>Provide Excellent Customer Support</h3>
+                        <p>Build loyalty and encourage repeat business by offering exceptional support. Happy customers become your best advocates and a source of recurring revenue.</p>
+                    </div>
+                </div>
+                
+                <div class="profit-tip">
+                    <div class="tip-number">5</div>
+                    <div class="tip-content">
+                        <h3>Stay Ahead of Social Media Trends</h3>
+                        <p>Keep your finger on the pulse of social media developments to offer the most relevant and in-demand services to your customers.</p>
+                    </div>
+                </div>
+                
+                <div class="profit-tip">
+                    <div class="tip-number">6</div>
+                    <div class="tip-content">
+                        <h3>Leverage Social Proof</h3>
+                        <p>Showcase success stories and testimonials to build trust and credibility with potential customers, making it easier to close sales.</p>
+                    </div>
+                </div>
+                
+                <div class="profit-tip">
+                    <div class="tip-number">7</div>
+                    <div class="tip-content">
+                        <h3>Optimize Your Pricing Strategy</h3>
+                        <p>Experiment with different pricing models and packages to find the most profitable approach for your target market.</p>
+                    </div>
+                </div>
+                
+                <div class="profit-tip">
+                    <div class="tip-number">8</div>
+                    <div class="tip-content">
+                        <h3>Build Long-Term Customer Relationships</h3>
+                        <p>Focus on creating lasting connections with your customers through regular engagement and personalized service to ensure repeat business.</p>
+                    </div>
+                </div>
+                
+                <div class="profit-tip">
+                    <div class="tip-number">9</div>
+                    <div class="tip-content">
+                        <h3>Implement a Referral Program</h3>
+                        <p>Encourage word-of-mouth marketing by rewarding customers who refer new business to you, creating a cost-effective customer acquisition channel.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="why-choose-us-cta">
+                <h2>Why Our SMM Panel is the Best Choice for Resellers</h2>
+                <p>In the competitive world of social media marketing, having the right tools makes all the difference. Our SMM Panel is specifically designed to help resellers succeed with features like bulk discounts, white-label options, custom API integration, and dedicated support. Whether you're just starting or looking to scale your business, we provide the reliability and features you need to achieve your goals.</p>
+                <p>With our commitment to quality, speed, and customer satisfaction, we're confident our SMM Panel is the perfect partner for your reselling business. Join us today and start building your successful social media marketing business!</p>
+                <div class="text-center">
+                    <a href="#contact" class="btn btn-primary btn-lg">Start Your Reselling Journey Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Country-Specific SMM Panels -->
+    <section id="country-panels" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Country-Specific Social Media Marketing Power</h2>
+                <p>We understand that social media users across the globe have different languages, cultures, and preferences. That's why we offer localized SMM Panel services for maximum impact in 22 countries.</p>
+            </div>
+            
+            <div class="country-grid">
+                <!-- Row 1 -->
+                <!-- United States -->
+                <div class="country-card">
+                    <div class="country-flag">🇺🇸</div>
+                    <h3>United States SMM Panel</h3>
+                    <p>Reach over 200 million active social media users with our USA-targeted services including Instagram followers, YouTube views, and TikTok likes from real U.S. users.</p>
+                </div>
+
+                <!-- Germany -->
+                <div class="country-card">
+                    <div class="country-flag">🇩🇪</div>
+                    <h3>Germany SMM Panel</h3>
+                    <p>Connect with millions of German social media users through our localized services for Instagram, YouTube, and TikTok.</p>
+                </div>
+
+                <!-- United Kingdom -->
+                <div class="country-card">
+                    <div class="country-flag">🇬🇧</div>
+                    <h3>United Kingdom SMM Panel</h3>
+                    <p>Engage with UK audiences through our targeted social media marketing solutions.</p>
+                </div>
+
+                <!-- Row 2 -->
+                <!-- France -->
+                <div class="country-card">
+                    <div class="country-flag">🇫🇷</div>
+                    <h3>France SMM Panel</h3>
+                    <p>Engage with French-speaking audiences through our localized social media marketing solutions.</p>
+                </div>
+
+                <!-- Spain -->
+                <div class="country-card">
+                    <div class="country-flag">🇪🇸</div>
+                    <h3>Spain SMM Panel</h3>
+                    <p>Boost your social media presence in the Spanish market with our targeted Instagram, YouTube, and TikTok services.</p>
+                </div>
+
+                <!-- Italy -->
+                <div class="country-card">
+                    <div class="country-flag">🇮🇹</div>
+                    <h3>Italy SMM Panel</h3>
+                    <p>Connect with Italian social media users through our tailored Instagram, YouTube, and TikTok services.</p>
+                </div>
+
+                <!-- Row 3 -->
+                <!-- Brazil -->
+                <div class="country-card">
+                    <div class="country-flag">🇧🇷</div>
+                    <h3>Brazil SMM Panel</h3>
+                    <p>Reach millions of Portuguese-speaking users in one of the world's largest social media markets.</p>
+                </div>
+
+                <!-- Japan -->
+                <div class="country-card">
+                    <div class="country-flag">🇯🇵</div>
+                    <h3>Japan SMM Panel</h3>
+                    <p>Engage with Japan's tech-savvy audience through our localized social media services.</p>
+                </div>
+
+                <!-- South Korea -->
+                <div class="country-card">
+                    <div class="country-flag">🇰🇷</div>
+                    <h3>South Korea SMM Panel</h3>
+                    <p>Connect with one of the most engaged social media audiences in the world.</p>
+                </div>
+
+                <!-- China -->
+                <div class="country-card">
+                    <div class="country-flag">🇨🇳</div>
+                    <h3>China SMM Panel</h3>
+                    <p>Access Chinese social media platforms with our specialized services.</p>
+                </div>
+
+                <!-- Russia -->
+                <div class="country-card">
+                    <div class="country-flag">🇷🇺</div>
+                    <h3>Russia SMM Panel</h3>
+                    <p>Reach Russian-speaking audiences with our localized services.</p>
+                </div>
+
+                <!-- Middle East -->
+                <div class="country-card">
+                    <div class="country-flag">🌍</div>
+                    <h3>Middle East SMM Panel</h3>
+                    <p>Connect with Arabic-speaking users across the Middle East.</p>
+                </div>
+
+                <!-- India -->
+                <div class="country-card">
+                    <div class="country-flag">🇮🇳</div>
+                    <h3>India SMM Panel</h3>
+                    <p>Reach hundreds of millions of users in one of the world's largest markets.</p>
+                </div>
+
+                <!-- Netherlands -->
+                <div class="country-card">
+                    <div class="country-flag">🇳🇱</div>
+                    <h3>Netherlands SMM Panel</h3>
+                    <p>Engage with Dutch-speaking audiences across social platforms.</p>
+                </div>
+                <!-- Sweden -->
+                <div class="country-card">
+                    <div class="country-flag">🇸🇪</div>
+                    <h3>Sweden SMM Panel</h3>
+                    <p>Reach Swedish-speaking users with our localized social media services.</p>
+                </div>
+                <!-- Norway -->
+                <div class="country-card">
+                    <div class="country-flag">🇳🇴</div>
+                    <h3>Norway SMM Panel</h3>
+                    <p>Connect with Norwegian audiences through targeted social media marketing.</p>
+                </div>
+                <!-- Finland -->
+                <div class="country-card">
+                    <div class="country-flag">🇫🇮</div>
+                    <h3>Finland SMM Panel</h3>
+                    <p>Engage with Finnish-speaking social media users effectively.</p>
+                </div>
+                <!-- Denmark -->
+                <div class="country-card">
+                    <div class="country-flag">🇩🇰</div>
+                    <h3>Denmark SMM Panel</h3>
+                    <p>Boost your presence in the Danish social media market.</p>
+                </div>
+                <!-- Turkey -->
+                <div class="country-card">
+                    <div class="country-flag">🇹🇷</div>
+                    <h3>Turkey SMM Panel</h3>
+                    <p>Reach Turkish-speaking audiences with our specialized services.</p>
+                </div>
+                <!-- Poland -->
+                <div class="country-card">
+                    <div class="country-flag">🇵🇱</div>
+                    <h3>Poland SMM Panel</h3>
+                    <p>Connect with Polish social media users through our targeted solutions.</p>
+                </div>
+                <!-- Israel -->
+                <div class="country-card">
+                    <div class="country-flag">🇮🇱</div>
+                    <h3>Israel SMM Panel</h3>
+                    <p>Engage with Hebrew-speaking audiences across social platforms.</p>
+                </div>
+                <!-- Thailand -->
+                <div class="country-card">
+                    <div class="country-flag">🇹🇭</div>
+                    <h3>Thailand SMM Panel</h3>
+                    <p>Reach Thai-speaking users with our localized social media services.</p>
+                </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>What our customers say</h2>
+                <p class="section-subtitle">Testimonials</p>
+            </div>
+            
+            <div class="testimonials-container">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-box">
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"As a reseller, I need a reliable SMM Panel that I can trust to deliver results to my clients. This panel has been nothing short of fantastic. The custom API integration makes my life so much easier, and the white-label option allows me to offer these services under my own brand. It's definitely the best SMM Panel for resellers!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Emily R">
+                        </div>
+                        <div class="author-info">
+                            <h4>Emily R</h4>
+                            <span>SMM Reseller</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-box">
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"I've tried other SMM Panels before, but this one takes the cake! The services are fast, reliable, and exactly what I needed to boost my Instagram following. Within hours, I saw a significant increase in followers and engagement. If you're looking for the best SMM Panel out there, look no further!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Lisa M">
+                        </div>
+                        <div class="author-info">
+                            <h4>Lisa M</h4>
+                            <span>Instagram Influencer</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-box">
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"I run a small digital marketing agency, and finding affordable, high-quality social media services is always a challenge. This SMM Panel offers the cheapest rates without compromising on quality. My clients have seen amazing results on both YouTube and TikTok. Plus, the support team is super helpful and quick to respond. Highly recommend for any reseller!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John K">
+                        </div>
+                        <div class="author-info">
+                            <h4>John K</h4>
+                            <span>Digital Marketer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know</p>
+            </div>
+            
+            <div class="faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is an SMM Panel?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>An SMM Panel is a platform that offers social media marketing services such as likes, followers, views, and more.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How does the SMM Panel work?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Users select the desired service, place an order, and see the results in real-time.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are the services safe?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all our services are safe and comply with social media guidelines.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I resell your services?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We offer special reseller packages.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I get started?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Simply create an account, choose your service, and place an order.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 6 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Which social media platforms do you support?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We support a wide range of platforms, including Instagram, YouTube, TikTok, Facebook, Twitter, LinkedIn, Snapchat, Pinterest, and Reddit. We offer services like followers, views, likes, and comments for each platform.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 7 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How quickly will I see results after placing an order?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most orders begin processing within minutes and results are often visible shortly after. Depending on the service, you may start seeing results instantly, but larger orders may take a little longer to complete.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 8 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are the followers and likes real?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all the followers, likes, and views we provide are real. We do not use bots or fake accounts. Our goal is to help you grow your social media presence with real, active users who can engage with your content.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 9 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do your services work for resellers?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Our SMM Panel is perfect for resellers. We offer discounted rates for bulk orders, custom API integration for seamless reselling, and even white-label options, so you can brand the services as your own.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 10 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is a white-label SMM Panel?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A white-label SMM Panel allows resellers to offer our services under their own brand name. Your customers won't know that you're using our platform—they'll only see your branding and results.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* ===== Header ===== */
+        .site-header {
+            padding: 20px 0;
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .header-logo h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1d4ed8;
+            margin: 0;
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        .header-nav a {
+            color: #334155;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .header-nav a:hover {
+            color: #1d4ed8;
+        }
+
+        /* ===== Hero Section ===== */
+        .hero {
+            position: relative;
+            padding: 100px 0 80px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            color: white;
+        }
+        
+        .hero-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .hero-text {
+            flex: 1;
+            padding-right: 40px;
+        }
+        
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 992px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .hero-text {
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+            
+            .hero-image {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+        
+        .hero .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            max-width: 900px;
+            margin: 0 auto 25px;
+            color: #111;
+        }
+
+        .highlight {
+            background-color: #c7d2fe;
+            padding: 0 0.4em;
+            border-radius: 6px;
+            color: #1d4ed8;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 20px auto 40px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .hero-button {
+            background-color: #e1e5f1;
+            color: black !important;
+            font-size: 1rem;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .hero-button:hover {
+            background-color: #153bbf;
+        }
+
+        /* Decorative Shapes */
+        .shape-left, 
+        .shape-right {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 250px;
+            height: 250px;
+            background-color: #e0e7ff;
+            z-index: 0;
+            border-radius: 50%;
+            opacity: 0.5;
+        }
+
+        .shape-left {
+            left: -100px;
+        }
+
+        .shape-right {
+            right: -100px;
+        }
+
+        .hero-cta {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: rgb(6, 6, 6);
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.2);
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+        }
+
+        
+        .hero-image {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .image-placeholder {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            background: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .image-placeholder:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .image-placeholder svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* ===== Responsive Styles ===== */
+        @media (max-width: 1024px) {
+            .hero-title {
+                font-size: 3rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.15rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .site-header {
+                padding: 15px 0;
+            }
+            
+            .header-logo h1 {
+                font-size: 1.5rem;
+            }
+            
+            .header-nav {
+                gap: 15px;
+            }
+            
+            .header-nav a {
+                font-size: 0.9rem;
+            }
+            
+            .hero {
+                padding: 140px 0 80px;
+                margin-top: 0;
+            }
+            
+            .hero-title {
+                font-size: 2.25rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+                max-width: 90%;
+            }
+            
+            .hero-subtitle {
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 1.1rem;
+                margin-bottom: 32px;
+            }
+            
+            .hero-cta {
+                justify-content: center;
+            }
+            
+            .hero-image {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero {
+                padding: 60px 0;
+            }
+            
+            .hero-title {
+                font-size: 1.875rem;
+                line-height: 1.2;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+                margin-bottom: 28px;
+            }
+            
+            .hero-cta {
+                flex-direction: column;
+                gap: 12px;
+            }
+            
+            .btn {
+                width: 100%;
+                padding: 12px 20px;
+            }
+        }
+        
+        .country-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+            width: 100%;
+        }
+        
+        @media (max-width: 992px) {
+            .country-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+        .country-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #eee;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+            min-width: 0; /* Prevents flex items from overflowing */
+            word-wrap: break-word;
+        }
+        .country-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .country-flag {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .country-card h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+            font-size: 1.3rem;
+            min-height: 45px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            word-break: break-word;
+        }
+        .country-card p {
+            color: #666;
+            margin: 10px 0 15px;
+            line-height: 1.5;
+            flex-grow: 1;
+            min-height: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+        .view-more-container {
+            display: none; /* Hide view more container as it's no longer needed */
+        }
+        .hidden {
+            display: block; /* Show all countries by default */
+        }
+        @media (max-width: 600px) {
+            .country-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Testimonials */
+        .testimonials-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .testimonial-box {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .testimonial-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-rating {
+            color: #FFD700;
+            font-size: 18px;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+        
+        .testimonial-content {
+            flex-grow: 1;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .testimonial-content p {
+            color: #555;
+            line-height: 1.7;
+            font-size: 15px;
+            margin: 0;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .testimonial-content p::before {
+            content: '"';
+            font-size: 60px;
+            color: #f0f0f0;
+            position: absolute;
+            left: -15px;
+            top: -20px;
+            font-family: Georgia, serif;
+            line-height: 1;
+            z-index: 0;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+            border-top: 1px solid #f0f0f0;
+            margin-top: auto;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+            border: 2px solid #f0f0f0;
+        }
+        
+        .author-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .author-info h4 {
+            margin: 0 0 2px 0;
+            color: #333;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        .author-info span {
+            color: #777;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 992px) {
+            .testimonials-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .testimonials-container {
+                grid-template-columns: 1fr;
+                max-width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .testimonial-box {
+                padding: 25px;
+            }
+        }
+        
+        /* FAQ Styles */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #eaeaea;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item.active {
+            border-color: #4a6cf7;
+            box-shadow: 0 5px 15px rgba(74, 108, 247, 0.1);
+        }
+        
+        .faq-question {
+            padding: 20px 25px;
+            background: #fff;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: #f9f9f9;
+        }
+        
+        .faq-question h3 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .faq-toggle {
+            font-size: 20px;
+            color: #4a6cf7;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background: #f9f9f9;
+        }
+        
+        .faq-answer p {
+            padding: 0 25px 20px;
+            margin: 0;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+        
+        @media (max-width: 768px) {
+            .faq-question {
+                padding: 15px 20px;
+            }
+            
+            .faq-question h3 {
+                font-size: 15px;
+            }
+            
+            .faq-answer p {
+                padding: 0 20px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+
+    <script>
+        // FAQ Toggle Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // Close other open items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                            otherItem.querySelector('.faq-answer').style.maxHeight = '0';
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                    const answer = item.querySelector('.faq-answer');
+                    
+                    if (item.classList.contains('active')) {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    } else {
+                        answer.style.maxHeight = '0';
+                    }
+                });
+            });
+        });
+        document.getElementById('viewMoreBtn').addEventListener('click', function() {
+            const moreCountries = document.getElementById('moreCountries');
+            const viewMoreBtn = document.getElementById('viewMoreBtn');
+            
+            if (moreCountries.classList.contains('hidden')) {
+                moreCountries.classList.remove('hidden');
+                moreCountries.parentElement.classList.add('expanded');
+                viewMoreBtn.textContent = 'Show Less';
+            } else {
+                moreCountries.classList.add('hidden');
+                moreCountries.parentElement.classList.remove('expanded');
+                viewMoreBtn.textContent = 'View All 22 Countries';
+            }
+        });
+    </script>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section">
+        <div class="container">
+            <h2>Cheapest Rates in the Market</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <div class="price">$4.99<span>/month</span></div>
+                    <ul>
+                        <li>1000 Instagram Likes</li>
+                        <li>500 YouTube Views</li>
+                        <li>Basic Support</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Get Started</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="popular">Most Popular</div>
+                    <h3>Business</h3>
+                    <div class="price">$14.99<span>/month</span></div>
+                    <ul>
+                        <li>5000 Instagram Likes</li>
+                        <li>2500 YouTube Views</li>
+                        <li>Priority Support</li>
+                        <li>24/7 Customer Care</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">$29.99<span>/month</span></div>
+                    <ul>
+                        <li>15000 Instagram Likes</li>
+                        <li>10000 YouTube Views</li>
+                        <li>24/7 VIP Support</li>
+                        <li>Dedicated Account Manager</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>SMMPanel</h3>
+                    <p>Your trusted partner for all social media marketing needs.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> support@smmpanel.com</p>
+                    <p><i class="fas fa-headset"></i> 24/7 Support</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SMMPanel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <style>
+        /* Adjust spacing for reseller section */
+        #reseller {
+            padding: 40px 0 20px;
+        }
+        /* Center the reseller CTA button */
+        .reseller-cta-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .reseller-cta-container .btn {
+            padding: 15px 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            box-shadow: 0 10px 25px rgba(67, 97, 238, 0.3);
+            transition: all 0.3s ease;
+        }
+        .reseller-cta-container .btn:hover {
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 15px 30px rgba(67, 97, 238, 0.4);
+        }
+        @media (max-width: 768px) {
+            .reseller-cta-container {
+                margin: 40px 0;
+            }
+            .reseller-cta-container .btn {
+                padding: 12px 40px;
+                font-size: 1.1rem;
+                width: 100%;
+                max-width: 280px;
+            }
+        }
+    </style>
+
+</body>
+</html>
